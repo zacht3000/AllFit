@@ -1,0 +1,7 @@
+{
+  "name": "..\\allfit-new",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
