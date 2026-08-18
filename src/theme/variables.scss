@@ -1,2 +1,38 @@
 // For information on how to create your own theme, please refer to:
 // https://ionicframework.com/docs/theming/
+
+:root {
+  // Colores de marca
+  --app-color-primary: #ff5a0a;
+  --app-color-primary-hover: #ff702e;
+
+  // Fondos
+  --app-background: #030303;
+  --app-surface: #121212;
+
+  // Textos
+  --app-text-primary: #ffffff;
+  --app-text-secondary: #b8b8b8;
+
+  // Bordes
+  --app-border-radius: 0.65rem;
+
+  // Espaciado
+  --app-spacing-sm: 0.85rem;
+  --app-spacing-md: 1.25rem;
+  --app-spacing-lg: 2rem;
+
+  // Tamaños táctiles
+  --app-control-height: 3.35rem;
+
+  // Ionic
+  --ion-color-primary: #ff5a0a;
+  --ion-color-primary-rgb: 255, 90, 10;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #e04f09;
+  --ion-color-primary-tint: #ff6b23;
+
+  --ion-background-color: #030303;
+  --ion-text-color: #ffffff;
+}

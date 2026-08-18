@@ -1,3 +1,15 @@
-<p>
-  welcome works!
-</p>
+<ion-content [fullscreen]="true" class="welcome-page">
+  <main class="welcome" aria-labelledby="welcome-title">
+    <div class="welcome__shade" aria-hidden="true"></div>
+    <section class="welcome__content">
+      <div class="welcome__copy">
+        <h1 id="welcome-title">Entrena.<br /><span>Nutre.</span><br />Supérate.</h1>
+        <p>Todo tu progreso,<br />potenciado con IA.</p>
+      </div>
+      <div class="welcome__actions">
+        <button class="app-button app-button--primary" type="button" (click)="start()">Comenzar</button>
+        <button class="app-button app-button--outline welcome__button--outline" type="button" (click)="signIn()">Iniciar sesión</button>
+      </div>
+    </section>
+  </main>
+</ion-content>

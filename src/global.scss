@@ -35,3 +35,66 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+html,
+body {
+  background: var(--app-background);
+}
+
+body {
+  color: var(--app-text-primary);
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 3px solid var(--app-text-primary);
+  outline-offset: 3px;
+}
+
+.app-button {
+  width: 100%;
+  min-height: var(--app-control-height);
+  border: 2px solid var(--app-color-primary);
+  border-radius: var(--app-border-radius);
+  font-weight: 700;
+  color: var(--app-text-primary);
+  cursor: pointer;
+  transition: transform 140ms ease, filter 140ms ease, background-color 140ms ease;
+}
+
+.app-button:active {
+  transform: scale(0.985);
+}
+
+.app-button--primary {
+  background: var(--app-color-primary);
+}
+
+.app-button--primary:hover {
+  filter: brightness(1.08);
+}
+
+.app-button--outline {
+  background: transparent;
+}
+
+.app-button--outline:hover {
+  background: rgba(var(--ion-color-primary-rgb), 0.14);
+}

@@ -1,0 +1,100 @@
+:host {
+  display: block;
+  min-height: 100%;
+  background: var(--app-background);
+}
+
+.welcome-page {
+  --background: var(--app-background);
+}
+
+.welcome {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  min-height: 100%;
+  min-height: 100dvh;
+  overflow: hidden;
+  color: var(--app-text-primary);
+  background: var(--app-background) url('/assets/welcome-hero.png') 59% center / cover no-repeat;
+}
+
+.welcome__shade {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.05) 20%, rgba(0, 0, 0, 0.5) 58%, var(--app-background) 88%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.65), transparent 72%);
+}
+
+.welcome__content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 34rem;
+  min-height: 100%;
+  margin-inline: auto;
+  padding:
+    max(var(--app-spacing-lg), env(safe-area-inset-top))
+    max(var(--app-spacing-md), env(safe-area-inset-right))
+    max(1.75rem, env(safe-area-inset-bottom))
+    max(var(--app-spacing-md), env(safe-area-inset-left));
+}
+
+.welcome__copy {
+  margin-bottom: clamp(1.75rem, 5vh, 3rem);
+}
+
+h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2.35rem, 10.8vw, 3.6rem);
+  font-weight: 800;
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+  text-transform: uppercase;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.7);
+
+  span {
+    color: var(--app-color-primary);
+  }
+}
+
+p {
+  margin: 0;
+  font-size: clamp(1rem, 4.2vw, 1.2rem);
+  font-weight: 500;
+  line-height: 1.35;
+  text-shadow: 0 1px 8px #000;
+}
+
+.welcome__actions {
+  display: grid;
+  gap: var(--app-spacing-sm);
+}
+
+.welcome__button--outline {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+@media (min-width: 700px) {
+  .welcome {
+    background-position: center 31%;
+  }
+
+  .welcome__content {
+    margin-left: max(3rem, 8vw);
+  }
+}
+
+@media (max-height: 650px) {
+  .welcome__copy {
+    margin-bottom: 1.25rem;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 9vw, 3rem);
+  }
+}
