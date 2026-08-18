@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { WelcomeComponent } from './pages/welcome/welcome.component';
 
 const routes: Routes = [
   {
@@ -8,8 +9,12 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'welcome',
     pathMatch: 'full'
+  },
+  {
+    path: 'welcome',
+    component: WelcomeComponent
   },
 ];
 
